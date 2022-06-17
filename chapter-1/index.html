@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 通过script标签在头部引入的脚本文件或添加的脚本都阻塞Dom的渲染和后面的脚本执行
+        所以很多时候我们选择把脚本放到body 最下面引入
+     -->
+    <script>
+        // alert("1234")
+    </script>
+
+</head>
+
+<body>
+    <script src="./basic.js">
+        //有src属性，所以script标签内的脚本不会执行
+        alert("21212")
+    </script>
+</body>
+
+</html>
