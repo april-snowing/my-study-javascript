@@ -26,9 +26,35 @@ console.log(a);
 
 // 2
 // 推荐使用let const,尽量不使用var
-a2 = "name";
+var a2 = "name";
 function hd_2() {
-    console.log(a2);  //报错 Uncaught ReferenceError: Cannot access 'a2' before initialization
+    //console.log(a2);  //报错 Uncaught ReferenceError: Cannot access 'a2' before initialization
     let a2 = "gaoxueling" //let 在这个函数内产生了临时性死区，即使前面定义了a2，但是在let声明的作用域内必须先声明后访问
 }
 hd_2();
+
+
+//这另个思维差异
+//打印三角形理解for 循环
+for (let i = 1; i <= 6; i++) {
+    for (let m = 1; m <= 6 - i; m++) {
+        document.write(`<span>*</span>`);
+    }
+    for (let n = 1; n <= 2 * i - 1; n++) {
+        document.write("*");
+    }
+    document.write("<br />")
+}
+
+
+for (let i = 1; i <= 6; i++) {
+    //有多少个占位,
+    for (let m = 6 - i; m > 0; m--) {
+        document.write(`<span>*</span>`);
+    }
+    //有多少个*
+    for (let n = 2 * i - 1; n > 0; n--) {
+        document.write("*");
+    }
+    document.write("<br />")
+}
