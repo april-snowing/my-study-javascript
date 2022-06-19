@@ -17,8 +17,9 @@ function hd() {
     console.log(web)  // undefined
 }
 hd();
+
 //变量提升
-//var a = 1..包含 1.变量的定义  2.变量的复制
+//var a = 1;  包含 1.变量的定义  2.变量的赋值
 // 变量提升，就是解析器先解析代码，把变量的定义升到最前面
 console.log(a);  //undefined  定义
 var a = 1;
@@ -34,7 +35,7 @@ function hd_2() {
 hd_2();
 
 
-//这另个思维差异
+//这两个个思维差异
 //打印三角形理解for 循环
 for (let i = 1; i <= 6; i++) {
     for (let m = 1; m <= 6 - i; m++) {
