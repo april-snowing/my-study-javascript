@@ -21,7 +21,6 @@ let usersInfo = `<ul>
 document.write(usersInfo);
 
 function links(strings, ...vars) {
-    console.log(vars)
     return strings.map((str, index) => {
         let varValue = vars[index];
         varValue = varValue && work.reduce((pre, work) => {
